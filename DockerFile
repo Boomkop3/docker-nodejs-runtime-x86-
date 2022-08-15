@@ -1,0 +1,5 @@
+FROM i386/debian:stable
+COPY init.sh /setup/init.sh
+COPY run.sh /setup/run.sh
+RUN /setup/init.sh
+CMD /setup/run.sh
